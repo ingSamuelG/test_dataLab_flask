@@ -1,0 +1,150 @@
+.full_height {
+  min-height: 80vh;
+  /* background-color: brown; */
+}
+
+.test {
+  height: 100%;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+}
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+  text-decoration: underline;
+  transform: rotate(-90deg);
+}
+
+.img-wrap {
+  width: 600px;
+  height: 800px;
+}
+
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  /* Set a specific height */
+  height: 100%;
+  width: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: relative;
+  border-radius: 15rem;
+  transition: all 100ms;
+}
+
+.hero-image:hover {
+  border: 2px solid #212529;
+}
+
+.thump {
+  width: 300px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.thump:hover {
+  border: 2px solid #212529;
+}
+
+.chart {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible !important;
+}
+
+.hg {
+  font-weight: bold;
+}
+
+.small {
+  font-size: 0.6rem;
+}
+
+.a_non_text_decorator:link {
+  text-decoration: none;
+}
+
+.a_non_text_decorator:active {
+  text-decoration: none;
+}
+
+.a_non_text_decorator:visited {
+  text-decoration: none;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  visibility: hidden;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #212529;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #212529 transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 1100px) {
+  /* For mobile phones: */
+  .img-wrap {
+    width: 500px;
+    height: 700px;
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  /* For mobile phones: */
+  .img-wrap {
+    width: 300px;
+    height: 400px;
+  }
+}
