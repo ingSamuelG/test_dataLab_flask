@@ -18,4 +18,3 @@ def project(name):
         "users": list(map(userResToDic,users_res))
         }
     return jsonify(response)
-# user, user role association

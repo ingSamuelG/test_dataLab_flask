@@ -1,4 +1,4 @@
-# Image-clasiffier
+# Data Lab
 
 ## Database requirements
 
